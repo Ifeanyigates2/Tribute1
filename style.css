@@ -155,6 +155,7 @@ nav ul li {
     font-size: 5rem;
     margin: var(--spacing-sm) 0;
     line-height: 1.1;
+    color: #000;
 }
 
 .dates {
@@ -163,6 +164,7 @@ nav ul li {
     color: var(--accent-color);
     letter-spacing: 0.2em;
     margin-bottom: var(--spacing-sm);
+    color: #000;
 }
 
 .epitaph {
@@ -172,6 +174,7 @@ nav ul li {
     margin: 0 auto;
     font-style: italic;
     font-family: var(--font-heading);
+    color: #000;
 }
 
 .hero-image-overlay {
@@ -412,7 +415,7 @@ footer {
 /* Responsive */
 @media (max-width: 768px) {
     .hero-content h1 {
-        font-size: 3rem;
+        font-size: 2.6rem;
     }
 
     header {
@@ -430,5 +433,25 @@ footer {
 
     section {
         padding: var(--spacing-lg) var(--spacing-sm);
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content {
+        max-width: 90%;
+    }
+
+    .hero-content h1 {
+        font-size: 2.1rem;
+        line-height: 1.2;
+    }
+
+    .dates {
+        font-size: 0.9rem;
+        letter-spacing: 0.12em;
+    }
+
+    .epitaph {
+        font-size: 1rem;
     }
 }
