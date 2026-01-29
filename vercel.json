@@ -1,5 +1,11 @@
 {
-  "rewrites": [
-    { "source": "/api/tributes", "destination": "/api/tributes" }
+  "version": 2,
+  "builds": [
+    { "src": "api/tributes.js", "use": "@vercel/node" },
+    { "src": "**/*", "use": "@vercel/static" }
+  ],
+  "routes": [
+    { "src": "/api/tributes", "dest": "/api/tributes.js" },
+    { "src": "/(.*)", "dest": "/$1" }
   ]
 }
