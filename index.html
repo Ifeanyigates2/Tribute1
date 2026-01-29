@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>In Loving Memory - Tribute</title>
+    <meta name="description"
+        content="A tribute website in loving memory of a beloved father. celebrating his life, legacy, and the memories we cherish.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Inter:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header id="header">
+        <nav>
+            <div class="logo">Legacy</div>
+            <ul>
+                <li><a href="#biography">Biography</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#tributes">Tributes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="hero-content">
+                <span class="dates">1950 — 2024</span>
+                <h1>Charles Ukomadu</h1>
+                <p class="epitaph">A loving father, a devoted husband, and a friend to all. Forever in our hearts.</p>
+                <div class="scroll-indicator">
+                    <span>Scroll to explore</span>
+                    <div class="line"></div>
+                </div>
+            </div>
+            <div class="hero-image-overlay"></div>
+        </section>
+
+        <section id="biography">
+            <div class="container">
+                <h2>His Life & Legacy</h2>
+                <div class="bio-content">
+                    <div class="bio-text">
+                        <p>This is a space to share the story of his life. From his early years to his greatest
+                            achievements, and the quiet moments that defined his character.</p>
+                        <p>He was a man of great integrity and kindness. He taught us the value of hard work, the
+                            importance of family, and the power of a smile. His legacy lives on through the lives he
+                            touched and the memories we hold dear.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery">
+            <div class="container">
+                <h2>Cherished Moments</h2>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="images/father-1.jpg" alt="Portrait of father" loading="lazy">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/father-2.jpg" alt="Portrait of father" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="tributes">
+            <div class="container">
+                <h2>Tributes</h2>
+                <div class="tribute-cards">
+                </div>
+            </div>
+        </section>
+        <section id="contribute">
+            <div class="container">
+                <h2>Share Your Memory</h2>
+                <form id="tribute-form" class="tribute-form">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" required placeholder="Enter your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="relationship">Relationship with Mr Charles</label>
+                        <input type="text" id="relationship" name="relationship" placeholder="E.g. Son, Daughter, Friend">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Tribute</label>
+                        <textarea id="message" name="message" required
+                            placeholder="Share your fondest memory..."></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">Post Tribute</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 In Loving Memory. Created with love.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
